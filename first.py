@@ -83,7 +83,6 @@ def tripupdate(transportType):
                     bus_trip_dets[entity.id] += "\n[Arrival: " + datetime.fromtimestamp(int(stop_time_update.arrival.time)).strftime('%Y-%m-%d %H:%M:%S') + "] " + (BUS_STOP_MAP[stop_time_update.stop_id])
                     if ((stop_time_update.stop_id == '203114')
                             or (stop_time_update.stop_id == '201715')):
-
                         now = datetime.now()
                         then = datetime.fromtimestamp(int(stop_time_update.arrival.time))
                         tdelta = then - now
